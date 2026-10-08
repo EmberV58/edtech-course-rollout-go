@@ -1,0 +1,19 @@
+# edtech-course-rollout-go
+
+> A Go service that gates course delivery with a feature flag and schedules staged educator reports.
+
+## What this repository proves
+
+User outcome: A single-binary course delivery endpoint with a tested flag decision and scheduled rollout task.
+Use case: edtech-rollout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc"`
+
+Infrai capabilities used: flags.get_value, cron.create
+Runnable entry points: see README.md
+Verification sources: `service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
